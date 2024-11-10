@@ -1,4 +1,6 @@
-function getUserNames(users) {}
+function getUserNames(users) {
+  return users.map(el => el.name);
+}
 
 //*===========================================================================
 
