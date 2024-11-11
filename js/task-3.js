@@ -1,4 +1,6 @@
-function sortByDescendingFriendCount(users) {}
+function sortByDescendingFriendCount(users) {
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
+}
 
 //*==================================================================
 
