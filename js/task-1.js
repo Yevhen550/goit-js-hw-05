@@ -1,6 +1,4 @@
-function getUserNames(users) {
-  return users.map(el => el.name);
-}
+const getUserNames = users => users.map(user => user.name);
 
 //*===========================================================================
 

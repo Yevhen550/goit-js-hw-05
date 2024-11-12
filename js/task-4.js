@@ -1,10 +1,8 @@
-function getTotalBalanceByGender(users, gender) {
-  let totalBalance = 0;
-  return users
-    .filter(el => el.gender === gender)
-    .map(el => el.balance)
+const getTotalBalanceByGender = (users, gender) =>
+  users
+    .filter(user => user.gender === gender)
+    .map(user => user.balance)
     .reduce((acc, user) => acc + user);
-}
 
 //*=============================================================
 
